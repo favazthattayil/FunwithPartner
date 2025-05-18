@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Did You Love?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background: linear-gradient(to bottom, #f0fff0, #98fb98);
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin: 20px 0;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Why did you love FavuKuttan?</h1>
+    <textarea placeholder="Write your reason here..."></textarea>
+    <br>
+    <button id="submit">Submit</button>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', () => {
+            window.location.href = "love3.html"; // Redirect to the fourth page
+        });
+    </script>
+</body>
+</html>

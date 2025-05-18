@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Much Do You Love?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background: linear-gradient(to bottom, #ffe4e1, #ffb6c1);
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        input[type="range"] {
+            width: 80%;
+            margin: 20px 0;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>How Much Do You Love FavuKuttan?</h1>
+    <input type="range" min="0" max="1000000000" step="1" value="0">
+    <br>
+    <button id="submit">Submit</button>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', () => {
+            window.location.href = "love2.html"; // Redirect to the third page
+        });
+    </script>
+</body>
+</html>
